@@ -71,8 +71,8 @@ predict.onclick = function () {
         url: '/predict/',
         data: imgUrl,
         success: function (r) {
-            console.log(r)
-            $('#result').text('Result: ' + r.prediction)
+            $('#result').text('Prediction: ' + r.prediction)
+            $('#result').attr('data-original-title', 'Confidence: ' + r.confidence)
         },
         error: function (e) {
             console.log(e)
@@ -86,5 +86,11 @@ clear.onclick = function () {
     context.clearRect(0, 0, canvas.width, canvas.height)
     context.fillStyle = 'black'
     context.fillRect(0, 0, canvas.width, canvas.height)
-    $('#result').html('Result:&nbsp;&nbsp;&nbsp;')
+    $('#result').html('Prediction:&nbsp;&nbsp;&nbsp;')
+    $('#result').attr('data-original-title', '')
 }
+
+// 开启提示
+$(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+})

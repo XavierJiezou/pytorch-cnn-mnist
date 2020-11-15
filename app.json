@@ -1,0 +1,6 @@
+{
+    "name": "Handwritten Digit Recognition",
+    "description": "cnn built using PyTorch and trained on mnist",
+    "repository": "https://github.com/XavierJiezou/pytorch-cnn-mnist",
+    "keywords": ["python", "flask", "bootstrap", "pytorch", "cnn", "mnist"]
+  }
