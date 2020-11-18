@@ -90,7 +90,37 @@ clear.onclick = function () {
     $('#result').attr('data-original-title', '')
 }
 
-// 开启提示
+// 移动端实现
+var start_x, start_y, move_x, move_y, end_x, end_y;
+
+// 按下
+canvas.ontouchstart = function (e) {
+    start_x = e.touches[0].pageX - this.offsetLeft;
+    start_y = e.touches[0].pageY - this.offsetTop;
+    context.lineWidth = range.value
+    context.lineJoin = 'round'
+    context.lineCap = 'round'
+    context.strokeStyle = 'white'
+    context.beginPath();
+    context.moveTo(start_x, start_y);
+};
+
+// 移动
+canvas.ontouchmove = function (e) {
+    move_x = e.touches[0].pageX - this.offsetLeft;
+    move_y = e.touches[0].pageY - this.offsetTop;
+    context.lineTo(move_x, move_y);
+    context.stroke();
+};
+
+// 松开
+canvas.ontouchend = function (e) {
+    end_x = e.changedTouches[0].pageX - this.offsetLeft;
+    end_y = e.changedTouches[0].pageY - this.offsetTop;
+    context.closePath();
+}
+
+// 开启bootstrap的冒泡提示
 $(function () {
     $('[data-toggle="tooltip"]').tooltip()
 })

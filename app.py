@@ -17,6 +17,7 @@ app.config['SEND_FILE_MAX_AGE_DEFAULT'] = 1
 
 
 model = CNN()
+# model.load_state_dict(torch.load('model.pt'))
 model.load_state_dict(torch.load('model.pt', map_location=torch.device('cpu')))
 model.eval()
 
