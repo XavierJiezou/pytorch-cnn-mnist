@@ -10,12 +10,12 @@ Install pytorch and other necessary module.
 pip install -r requirements.txt
 ```
 ## Train
-Run train.py to train your cnn model on mnist dataset.
+Run [train.py](train.py) to train your cnn model on mnist dataset.
 ```bash
 python train.py
 ```
 ## Test
-Run test.py to test the trained model on your own handwritten digit.
+Run [test.py](test.py) to test the trained model on your own handwritten digit.
 ```bash
 python test.py
 ```
