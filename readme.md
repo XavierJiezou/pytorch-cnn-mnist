@@ -3,7 +3,7 @@ This repo contains a sample code to show how to create a cnn model using pytorch
 ## Demo
 > [http://pytorch-cnn-mnist.herokuapp.com/](http://pytorch-cnn-mnist.herokuapp.com/)
 
-![](https://img-blog.csdnimg.cn/20201116104632753.gif)
+![](demo.gif)
 ## Install
 Install pytorch and other necessary module.
 ```bash
