@@ -24,7 +24,7 @@ python test.py
 2. create an `app` on heruku
 3. push the `deploy` folder to heroku master
 ## Blog
-Learn more about the training, read the following artcle written in Chinese
+Learn more about the training, read the following article written in Chinese
 > [https://blog.csdn.net/qq_42951560/article/details/109565625](https://blog.csdn.net/qq_42951560/article/details/109565625)
 ## Cite
 ```
