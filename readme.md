@@ -23,3 +23,11 @@ python test.py
 1. register an account of [heruku](https://www.heroku.com/)
 2. create an `app` on heruku
 3. push the `deploy` folder to heroku master
+## Blog
+Learn more about the training, read the following artcle written in Chinese
+> [https://blog.csdn.net/qq_42951560/article/details/109565625](https://blog.csdn.net/qq_42951560/article/details/109565625)
+## Cite
+```
+https://github.com/avinassh/pytorch-flask-api-heroku
+https://pytorch.org/tutorials/beginner/blitz/cifar10_tutorial.html
+```
