@@ -6,20 +6,20 @@ This repo contains a sample code to show how to create a cnn model using pytorch
 ![](https://img-blog.csdnimg.cn/20201116104632753.gif)
 ## Install
 Install pytorch and other necessary module.
-```shell
+```bash
 pip install -r requirements.txt
 ```
 ## Train
 Run train.py to train your cnn model on mnist dataset.
-```shell
+```bash
 python train.py
 ```
 ## Test
 Run test.py to test the trained model on your own handwritten digit.
-```shell
+```bash
 python test.py
 ```
 ## Deploy
-1. register an account of heruku
+1. register an account of [heruku](https://www.heroku.com/)
 2. create an app on heruku
 3. push the `deploy` folder to heroku master
