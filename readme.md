@@ -6,17 +6,17 @@ This repo contains a sample code to show how to create a cnn model using pytorch
 ![](https://img-blog.csdnimg.cn/20201116104632753.gif)
 ## Install
 Install pytorch and other necessary module.
-```bash
+```shell
 pip install -r requirements.txt
 ```
 ## Train
 Run train.py to train your cnn model on mnist dataset.
-```bash
+```shell
 python train.py
 ```
 ## Test
 Run test.py to test the trained model on your own handwritten digit.
-```bash
+```shell
 python test.py
 ```
 ## Deploy
