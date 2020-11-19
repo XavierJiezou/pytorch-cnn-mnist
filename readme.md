@@ -21,5 +21,5 @@ python test.py
 ```
 ## Deploy
 1. register an account of [heruku](https://www.heroku.com/)
-2. create an app on heruku
+2. create an `app` on heruku
 3. push the `deploy` folder to heroku master
