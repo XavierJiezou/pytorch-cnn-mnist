@@ -9,7 +9,7 @@ from torch.utils.tensorboard import SummaryWriter
 #%% tensorboard
 writer = SummaryWriter('./logs/')
 #%% 训练设备
-device = torch.device('cuda:5' if torch.cuda.is_available() else 'cpu')
+device = torch.device('cuda:0' if torch.cuda.is_available() else 'cpu')
 #%% 参数定义
 EPOCH = 30
 BATCH_SIZE = 128
