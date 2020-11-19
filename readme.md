@@ -1,4 +1,4 @@
-# pytorch-cnn-mnist
+# PyTorch-CNN-MNIST
 This repo contains a sample code to show how to create a cnn model using pytorch and trained on the mnist.
 ## Demo
 > [http://pytorch-cnn-mnist.herokuapp.com/](http://pytorch-cnn-mnist.herokuapp.com/)
