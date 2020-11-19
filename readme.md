@@ -1,34 +1,27 @@
-# PyTorch-CNN-MNIST
-This repo contains a sample code to show how to create a cnn model using pytorch and trained on the mnist.
-## Demo
-> [http://pytorch-cnn-mnist.herokuapp.com/](http://pytorch-cnn-mnist.herokuapp.com/)
+# PyTorch Flask API
 
-![](demo.gif)
-## Install
-Install `pytorch` and other necessary module (`tensorboard` and `matplotlib`).
-```bash
-pip install -r requirements.txt
-```
-## Train
-Run [train.py](train.py) to train your cnn model on mnist dataset.
-```bash
-python train.py
-```
-## Test
-Run [test.py](test.py) to test the trained model on your own handwritten digit.
-```bash
-python test.py
-```
-## Deploy
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/XavierJiezou/pytorch-cnn-mnist/deploy)
-1. register an account of [heruku](https://www.heroku.com/)
-2. create an `app` on heruku
-3. push the `deploy` folder to heroku master
-## Blog
-Learn more about training, read the following article written in Chinese
-> [https://blog.csdn.net/qq_42951560/article/details/109565625](https://blog.csdn.net/qq_42951560/article/details/109565625)
-## Cite
-```
-https://github.com/avinassh/pytorch-flask-api-heroku
-https://pytorch.org/tutorials/beginner/blitz/cifar10_tutorial.html
-```
+This repo contains a sample code to show how to create a Flask API server by deploying our PyTorch model. This is a sample code which goes with [tutorial](https://pytorch.org/tutorials/intermediate/flask_rest_api_tutorial.html).
+
+If you'd like to learn how to deploy to Heroku, then check [this repo](https://github.com/avinassh/pytorch-flask-api-heroku).
+
+
+## How to 
+
+Install the dependencies:
+
+    pip install -r requirements.txt
+
+
+Run the Flask server:
+
+    FLASK_ENV=development FLASK_APP=app.py flask run
+
+
+From another tab, send the image file in a request:
+
+    curl -X POST -F file=@cat_pic.jpeg http://localhost:5000/predict
+
+
+## License
+
+The mighty MIT license. Please check `LICENSE` for more details.
