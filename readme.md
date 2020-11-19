@@ -5,7 +5,7 @@ This repo contains a sample code to show how to create a cnn model using pytorch
 
 ![](demo.gif)
 ## Install
-Install pytorch and other necessary module (tensorboard and matplotlib).
+Install `pytorch` and other necessary module (`tensorboard` and `matplotlib`).
 ```bash
 pip install -r requirements.txt
 ```
