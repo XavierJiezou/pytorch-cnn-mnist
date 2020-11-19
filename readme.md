@@ -20,6 +20,7 @@ Run [test.py](test.py) to test the trained model on your own handwritten digit.
 python test.py
 ```
 ## Deploy
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/XavierJiezou/pytorch-cnn-mnist/deploy)
 1. register an account of [heruku](https://www.heroku.com/)
 2. create an `app` on heruku
 3. push the `deploy` folder to heroku master
